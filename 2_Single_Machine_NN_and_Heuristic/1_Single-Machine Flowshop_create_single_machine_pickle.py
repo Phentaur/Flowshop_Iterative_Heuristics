@@ -2,7 +2,9 @@
 """
 Created on Mon Jul  3 10:31:39 2023
 
-This code uses the exact MILP algorithm to generate and store single-machine instances which can then be used to test other single-machine algorithms.  The pickle files in this folder were created using this program.
+This code uses the exact MILP algorithm to generate and store single-machine instances which can then be used to test other single-machine algorithms.  The pickle files in the "Data" folder were created using this program.
+
+The name of the file that is created is specified in the variable 'pickleFilename'
 
 @author: matth
 """
@@ -16,6 +18,7 @@ unif = np.random.uniform
 geom = np.random.geometric 
 
 
+##### Pickle  file to write to #### 
 pickleFilename = 'single_machine_100N_100int.pickle'
 writeToPickle=True
 #Really big number for lateness indicator "on/off"
